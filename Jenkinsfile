@@ -1,17 +1,17 @@
 pipeline{
     agent any
     stages{
-        stage{
+        stage('welcoming'){
             steps{
                 sh "echo welcome to jenkins + maven automation"
             }
         }
-        stage{
+        stage('build'){
             steps{
                 sh "mvn clean package"
             }
         }
-        stage{
+        stage('run'){
             steps{
                 sh "java -jar target/demo-0.0.1-SNAPSHOT.jar"
             }
