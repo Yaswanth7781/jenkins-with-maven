@@ -13,7 +13,7 @@ pipeline{
         }
         stage('run'){
             steps{
-                sh "java -jar target/demo-0.0.1-SNAPSHOT.jar"
+                sh "java -jar target/demo-jenkins-maven-0.0.1-SNAPSHOT.jar"
             }
         }
     }
